@@ -1,0 +1,41 @@
+name: Frontend
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'js/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+
+      - name: Setup Pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Install JS dependencies
+        run: pnpm install
+        working-directory: ./js
+
+      - name: Build
+        uses: flarum/action-build@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          build_script: build:ci
+          format_script: format-check # default
+          build_typings_script: build:type
+          package_manager: pnpm
+          js_path: ./js # default
+          do_not_commit: false # default
+          commit_all_dirty: false # default
