@@ -2,13 +2,14 @@
 
 > **Read-only archive of released versions of startracex/flarum-dark.** Not for installation: use [Packagist](https://packagist.org/packages/startracex/flarum-dark) or the [upstream repository](https://github.com/startracex/flarum-dark).
 
-**0** versions archived · Latest: [`0.0.1`](https://github.com/flarchive/startracex-flarum-dark/tree/archive/v0.0.1) · License: `MIT` · Flarum: `^1.8.0`
+**2** versions archived · Latest: [`0.0.1`](https://github.com/flarchive/startracex-flarum-dark/tree/archive/v0.0.1) · License: `MIT` · Flarum: `^1.8.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `0.0.0` | 2024-04-07 | `^1.8.0` | [Browse](https://github.com/flarchive/startracex-flarum-dark/tree/archive/v0.0.0) |
+| `0.0.1` | 2024-04-09 | `^1.8.0` | [Browse](https://github.com/flarchive/startracex-flarum-dark/tree/archive/v0.0.1) |
 
 Catalog entry: [packages/startracex-flarum-dark.json](https://github.com/flarchive/archive-index/blob/main/packages/startracex-flarum-dark.json)
 
